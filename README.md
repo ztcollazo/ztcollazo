@@ -1,6 +1,6 @@
+<p align="center"><img src="./hello.svg" alt="Hello World" /></p>
+
 ## Hey, my name is [Zachary Collazo](https://github.com/ztcollazo)
-
-
 
 I like to:
 - `code`
