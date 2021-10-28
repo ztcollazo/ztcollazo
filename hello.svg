@@ -1,8 +1,8 @@
 <svg fill="none" viewBox="0 0 800 400" width="800" height="400" xmlns="http://www.w3.org/2000/svg">
 	<foreignObject width="100%" height="100%">
-		<div xmlns="http://www.w3.org/1999/xhtml">
+		<div id="root" style="padding: 0" class="container" xmlns="http://www.w3.org/1999/xhtml">
 			<style>
-				@keyframes rotate {
+				@keyframes bounce {
 					0% {
 						transform: scale(100%);
 					}
@@ -28,7 +28,7 @@
 					margin: 0;
 					width: 100%;
 					height: 400px;
-					color: lightblue;
+					color: #CDCDCD;
 					text-align: center;
 				}
 				h1 {
@@ -37,16 +37,52 @@
 					letter-spacing: 5px;
 					text-transform: uppercase;
 					text-shadow:
-						0 1px 0 rgba(0, 0, 0, 0.1),
-						0 2px 0 rgba(0, 0, 0, 0.1),
-						0 3px 0 rgba(0, 0, 0, 0.1),
-						0 4px 0 rgba(0, 0, 0, 0.1),
-						0 12px 5px rgba(0, 0, 0, 0.1);
-					animation: rotate ease-in-out 1s infinite alternate;
+						3px 6px 5px rgba(0, 0, 0, 0.2);
+					animation: bounce ease-in-out 0.7s infinite alternate;
 				}
+                                h2 {
+					font-size: 1rem;
+					line-height: 1;
+					letter-spacing: 3px;
+                                        font-variant: small-caps;
+					text-shadow:
+						2px 4px 4px rgba(0, 0, 0, 0.2);
+				}
+                                .background { 
+                                        position: absolute;
+                                        display: block; 
+                                        top: 0;
+                                        left: 0;
+                                        z-index: 0;
+                                }
 			</style>
+                        <script src="https://unpkg.com/typeit@8.0.2/dist/index.umd.js"></script>
+                        <script>
+                                window.onload = () => {
+                                        Particles.init({
+                                                connectParticles: true,
+                                                selector: '.background',
+                                                color: '#DEDEDE'
+                                        });
+                                       var instance = new TypeIt(".name", {
+                                                speed: 75,
+                                                loop: true,
+                                       })
+                                       instance.type("Zachary Collazo")
+                                          .pause(800)
+                                          .delete()
+                                          .pause(300)
+                                          .type("@ztcollazo")
+                                          .pause(800)
+                                          .delete()
+                                          .go();
+                                }
+                         </script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js" integrity="sha512-jq8sZI0I9Og0nnZ+CfJRnUzNSDKxr/5Bvha5bn7AHzTnRyxUfpUArMzfH++mwE/hb2efOo1gCAgI+1RMzf8F7g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                       <canvas class="background"></canvas>
 			<div class="container">
 				<h1>Hello World</h1>
+                               <h2>My name is <span style="font-variant: normal" class="name"></span></h2>
 			</div>
 		</div>
 	</foreignObject>
