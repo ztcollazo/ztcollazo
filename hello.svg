@@ -48,41 +48,10 @@
 					text-shadow:
 						2px 4px 4px rgba(0, 0, 0, 0.2);
 				}
-                                .background { 
-                                        position: absolute;
-                                        display: block; 
-                                        top: 0;
-                                        left: 0;
-                                        z-index: 0;
-                                }
 			</style>
-                        <script src="https://unpkg.com/typeit@8.0.2/dist/index.umd.js"></script>
-                        <script>
-                                window.onload = () => {
-                                        Particles.init({
-                                                connectParticles: true,
-                                                selector: '.background',
-                                                color: '#DEDEDE'
-                                        });
-                                       var instance = new TypeIt(".name", {
-                                                speed: 75,
-                                                loop: true,
-                                       })
-                                       instance.type("Zachary Collazo")
-                                          .pause(800)
-                                          .delete()
-                                          .pause(300)
-                                          .type("@ztcollazo")
-                                          .pause(800)
-                                          .delete()
-                                          .go();
-                                }
-                         </script>
-                        <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js" integrity="sha512-jq8sZI0I9Og0nnZ+CfJRnUzNSDKxr/5Bvha5bn7AHzTnRyxUfpUArMzfH++mwE/hb2efOo1gCAgI+1RMzf8F7g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-                       <canvas class="background"></canvas>
 			<div class="container">
 				<h1>Hello World</h1>
-                               <h2>My name is <span style="font-variant: normal" class="name"></span></h2>
+                <h2>My name is <span style="font-variant: normal; font-weight: bold;" class="name">Zachary Collazo</span></h2>
 			</div>
 		</div>
 	</foreignObject>
