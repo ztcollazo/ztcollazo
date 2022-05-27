@@ -1,6 +1,6 @@
 <p align="center"><img src="./hello.svg" alt="Hello World" /></p>
 
-<p align="center"><a href="https://github.com/ztcollazo/joke.svg"><img src="https://jokesvg.ztco.workers.dev/random" alt="Hello World" /></a></p>
+<p align="center"><a href="https://github.com/ztcollazo/joke.svg"><img src="https://jokesvg.ztco.workers.dev/random?theme=nord" alt="Hello World" /></a></p>
 
 # Hey, my name is [Zachary Collazo](https://github.com/ztcollazo)
 
