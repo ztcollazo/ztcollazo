@@ -1,5 +1,7 @@
 <p align="center"><img src="./hello.svg" alt="Hello World" /></p>
 
+<p align="center"><a href="https://github.com/ztcollazo/joke.svg"><img src="https://jokesvg.ztco.workers.dev" alt="Hello World" /></a></p>
+
 # Hey, my name is [Zachary Collazo](https://github.com/ztcollazo)
 
 [![My github stats](https://github-readme-stats.vercel.app/api?username=ztcollazo&theme=nord)](https://github.com/ztcollazo)
